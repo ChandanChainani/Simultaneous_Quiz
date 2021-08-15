@@ -1,38 +1,133 @@
-.App {
+.red {
+  background: red;
+}
+
+.tomato {
+  background: tomato;
+}
+
+.blue {
+  background: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  font-family: 'Montserrat', serif;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+  height: 72vh;
+  background: blue;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 3px;
+}
+
+.message {
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.container.start {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.start-btn {
+  font-size: 0.6em;
+}
+
+.container .top {
+  width: 100%;
+  height: 81%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container .top span {
+  display: flex;
+  width: 81px;
+  height: 81px;
+  line-height: 81px;
+  background: skyblue;
+  text-align: center;
+  justify-content: center;
+}
+
+.container.result {
+  align-items: center;
+  font-size: 0.5em;
+  overflow: auto;
+}
+
+.container span {
+  margin: 3px;
+}
+
+.score {
+  margin-right: 33px;
+}
+
+#user-input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width: 21%;
+  height: 100%;
+  font-size: 1.2em;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.form {
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 87%;
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form .group {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.true {
+  color: green;
+}
+
+.false {
+  color: red;
 }
